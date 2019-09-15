@@ -30,13 +30,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `username` varchar(180) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `roles` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL
-   `password` varchar(180) utf8mb4_unicode_ci NOT NULL,
-   `email` varchar(180) utf8mb4_unicode_ci NOT NULL,
-   `salt` varchar(180) utf8mb4_unicode_ci NOT NULL,
-   `is_active` int(11) utf8mb4_unicode_ci NOT NULL,
-) ;
+  `username` varchar(200) NOT NULL,
+  `roles` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `salt` varchar(200) NOT NULL,
+  `is_active` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
